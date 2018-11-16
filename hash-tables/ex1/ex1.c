@@ -8,7 +8,9 @@ Answer *get_indices_of_item_weights(int *weights, int length, int limit)
   HashTable *ht = create_hash_table(16);
 
   // YOUR CODE HERE
-
+  HashTable *ht = malloc(sizeof(HashTable));
+  ht->capacity = 16;
+  ht->storage = calloc(ht->capacity, sizeof(LinkedPair *));
   return NULL;
 }
 
