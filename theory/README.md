@@ -51,10 +51,10 @@ A     B     result
 ```
 A     B     result
 -------------------
-0     0       ? (True or False) and 
-0     1       ? (True or True) and 
-1     0       ? (False or False) and 
-1     1       ? (False or True) and
+0     0       ? (True or False) and (True or False) = False
+0     1       ? (True or True) and (True or True) = True
+1     0       ? (False or False) and (False or False) = False
+1     1       ? (False or True) and (False or True) = False
 ```
 
 3. `¬(A ∧ B) ∨ ( (A ∧ C) ∧ ¬(B ∨ ¬C) )`   (alternate: `!(A && B) || ( (A && C) && !(B || !C) )`)
